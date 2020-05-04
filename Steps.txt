@@ -1,0 +1,37 @@
+Initialization.R <- Imports the library needed
+
+hog.R <- implemented code for HoG
+	Input: Training and Testing Images
+	Output: Feature vector for training and testing images
+
+lbp.R<-  implemented code for LBP
+	Input: Training and Testing Images
+	Output: Feature vector for training and testing images
+
+glcm.R<- Code for GLCM 
+	Input: Training and Testing Images
+	Output: Feature vector for training and testing images
+
+run_hog.R<- Calculates the feature vector for HoG method and stores the result in a file as rds
+run_lbp.R<- Calculates the feature vector for LBP method and stores the result in a file as rds
+run_glcm.R<- Calculates the feature vector for GLCM method and stores the result in a file as rds
+
+
+knn_hog.R<- Performs classification based on feature vector(training and testing) obtained from hog.R
+knn_lbp.R<- Performs classification based on feature vector(training and testing) obtained from lbp.R
+knn_glcm.R<- Performs classification based on feature vector(training and testing) obtained from glcm.R
+
+
+naive_bayes_hog.R<- Performs classification based on feature vector(training and testing) obtained from hog.R
+naive_bayes_lbp.R<- Performs classification based on feature vector(training and testing) obtained from lbp.R
+naive_bayes_glcm.R<- Performs classification based on feature vector(training and testing) obtained from glcm.R
+
+svm.R<- Performs classification based on feature vectors
+
+runnable.R<- Just run this file
+
+NOTE: SET THE PATH OF YOUR WORKING DIRECTORY IN THE setwd() in runnable.R
+NOTE: If runnable.R dosen't work then steps to run the code
+1) source Initialization.R, hog.R, lbp.R glcm.R
+2) Acc to method selected run  run_hog.R, run_lbp.R, run_glcm.R
+3)Similarly acc to classification algo selected run algoname_methodname.R
